@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
@@ -23,7 +25,7 @@
         <div class="container">
             <h1 class="pt-4 text-center"><i class="fa-solid fa-medal text-primary"></i>LeaderBoard</h1>
         </div>
-        <div class="container d-flex flex-row justify-content-between">
+        <div class="container d-flex flex-row justify-content-between mt-4 p-2">
             <div class="row col-lg-6 mt-4">
                 <div class="p-1 d-flex flex-row justify-content-between">
                     <h2>Recent Score</h2>
@@ -31,32 +33,21 @@
                 </div>
                 <table class="table table-striped">
                     <tr>
-                        <th>Position</th>
+                        <!-- <th>Position</th> -->
                         <th>Name</th>
                         <th>Score</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Edward</td>
-                        <td>98</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Edward</td>
-                        <td>98</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Edward</td>
-                        <td>98</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Edward</td>
-                        <td>98</td>
-                    </tr>
+                    <tbody id="table-body">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Edward</td>
+                            <td>98</td>
+                        </tr>-->
+
+                    </tbody>
                 </table>
             </div>
+            <div class="vr"></div>
             <div class="row col-lg-6 mt-5">
                 <div class="mt-4">
                     <h2>Add Your Score</h2>
@@ -64,16 +55,48 @@
                 <form class="mt-5 pt-5">
                     <div class="mb-3">
                         <label for="lb-name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="lb-name" aria-describedby="name">
+                        <input type="text" class="form-control" id="lb-name">
                     </div>
                     <div class="mb-3">
                         <label for="lb-score" class="form-label">Score</label>
                         <input type="text" class="form-control" id="lb-score">
-                    </div>                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <button type="submit" class="btn btn-primary float-end">Submit</button>
                 </form>
             </div>
         </div>
     </main>
+
+    <footer id="contact" class="text-center mt-5 bg-light">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/odhiambo_ed"
+                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://www.linkedin.com/in/edward-odhiambo-6a462a21b/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/white3d"
+                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3 copyright">
+            © 2022 Copyright:
+            <a class="text-dark text-decoration-none" href="http://odhiambo.edward.com/">Edward-LeaderBoard</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
 </body>
+
 </html>
