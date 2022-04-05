@@ -23,11 +23,11 @@
         <div class="container">
             <h1 class="pt-4 text-center"><i class="fa-solid fa-medal text-primary"></i>LeaderBoard</h1>
         </div>
-        <div class="container">
+        <div class="container d-flex flex-row justify-content-between">
             <div class="row col-lg-6 mt-4">
                 <div class="p-1 d-flex flex-row justify-content-between">
                     <h2>Recent Score</h2>
-                    <h2><i class="fa-solid fa-arrows-rotate"></i></h2>
+                    <h3><i class="fa-solid fa-arrows-rotate"></i></h3>
                 </div>
                 <table class="table table-striped">
                     <tr>
@@ -57,8 +57,21 @@
                     </tr>
                 </table>
             </div>
-            <div class="row col-lg-6">
-
+            <div class="row col-lg-6 mt-5">
+                <div class="mt-4">
+                    <h2>Add Your Score</h2>
+                </div>
+                <form class="mt-5 pt-5">
+                    <div class="mb-3">
+                        <label for="lb-name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="lb-name" aria-describedby="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lb-score" class="form-label">Score</label>
+                        <input type="text" class="form-control" id="lb-score">
+                    </div>                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </main>
