@@ -1,5 +1,6 @@
 import 'bootstrap';
 import './scss/index.scss';
+import './css/style.css';
 import tableData from './js/displayLB.js';
 
 const scoreForm = document.querySelector('#score-form');
