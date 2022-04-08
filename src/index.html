@@ -13,9 +13,7 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <!-- <img src="img/ed-logo.png" alt="" width="30" height="24"
-                        class="d-inline-block align-text-top"> -->
+                <a class="navbar-brand" href="#">                    
                     <span class="text-danger">Edward</span> LeaderBoard
                 </a>
             </div>
@@ -25,28 +23,19 @@
         <div class="container">
             <h1 class="pt-4 text-center"><i class="fa-solid fa-medal text-primary"></i>LeaderBoard</h1>
         </div>
+        <div id="alert" class="alert alert-success" role="alert"></div>
         <div class="container d-flex flex-row justify-content-between mt-4 p-2">
-            <div class="row col-lg-6 mt-4">
-                <div class="row d-flex flex-row justify-content-between">
-                    <div class="col">
-                        <h2>Recent Score</h2>
-                    </div>
-                    <div class="col">
-                        <button type="button" id="getter" class="btn btn-primary">Refresh</button>
-                    </div>
+            <div class="row col-lg-6 mt-4 mb-2">
+                <div class="d-flex flex-row justify-content-between">
+                    <h2>Recent Score</h2>
+                    <button type="button" id="getter" class="btn btn-primary">Refresh</button>
                 </div>
-                <table class="table table-striped">
-                    <tr>
-                        <!-- <th>Position</th> -->
+                <table class="table table-striped mt-3">
+                    <tr>                        
                         <th>Name</th>
                         <th>Score</th>
                     </tr>
                     <tbody id="table-body">
-                        <!-- <tr>
-                            <td>1</td>
-                            <td>Edward</td>
-                            <td>98</td>
-                        </tr>-->
 
                     </tbody>
                 </table>

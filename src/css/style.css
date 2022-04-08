@@ -1,0 +1,19 @@
+#send {
+  margin-top: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#name {
+  margin-bottom: 20px;
+}
+
+#alert {
+  opacity: 0;
+  pointer-events: none;
+}
